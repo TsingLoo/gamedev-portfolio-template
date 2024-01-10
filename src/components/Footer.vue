@@ -1,8 +1,12 @@
 <template>
   <div class="footer">
-    
-    <div class="left"><a href="https://github.com/schouffy/gamedev-portfolio" target="blank">Portfolio</a> by schouffy</div>
-    <div class="right">Reach me at <a href="mailto:my@email.com">my@email.com</a> or <router-link to="/contact">through here</router-link></div>
+    <div class="left">
+    Xiaonan's <a href="https://github.com/TsingLoo/gamedev-portfolio-template" target="blank">Portfolio</a> 
+    <br /> 
+    <div class="green-text">Template by <a href="https://github.com/schouffy/gamedev-portfolio" target="blank">schouffy</a> 
+    and <a href="https://github.com/11BelowStudio/gamedev-portfolio-template" target="blank">11BelowStudio</a></div>
+</div>
+<div class="right">Reach me at <a href="mailto:TsingLoo@Outlook.com">TsingLoo@Outlook.com</a> or <router-link to="/contact">through here</router-link></div>
   </div>
 </template>
 
@@ -30,7 +34,12 @@ export default defineComponent({
 
 .left, .right {
   padding-top: 10px;
-  text-align: center;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.green-text { 
+  color: #707070; /* Bright green color */ 
 }
 
 @media only screen and (min-width: 620px){
