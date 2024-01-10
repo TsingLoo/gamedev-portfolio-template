@@ -2,9 +2,10 @@
   <div class="header">
     <div class="nav-bar">
       <router-link to="/index.html">About me</router-link>
-      <router-link to="/game-projects">Stuff</router-link>
-      <router-link to="/other-projects">Other stuff</router-link>
-      <router-link to="/resume">Resume</router-link>
+      <router-link to="/game-projects">Projects</router-link>
+      <!-- <router-link to="/other-projects">Other Projects </router-link> -->
+      <!-- <router-link to="/resume">Resume</router-link> -->
+      <a href="http://www.tsingloo.com" target="blank">Blog</a>
       <router-link to="/contact">Contact</router-link>
     </div>
   </div>
