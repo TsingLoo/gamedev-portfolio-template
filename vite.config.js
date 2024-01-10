@@ -10,6 +10,7 @@ export default ({mode}) => {
   };
 
   return defineConfig({
+    base: '/portfolio/',
     plugins: [vue()],
     resolve: {
       alias: [

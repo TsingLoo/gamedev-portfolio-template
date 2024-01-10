@@ -10,10 +10,10 @@ const E404View = () => import('../views/404.vue')
 
 export function createRouter(){
   return _createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/portfolio/'),
     routes: [
       {
-        path: '/',
+        path: '/index.html',
         name: 'Root',
         component: AboutView
       },
