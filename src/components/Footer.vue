@@ -4,7 +4,7 @@
     Xiaonan's <a href="https://github.com/TsingLoo/gamedev-portfolio-template" target="blank">Portfolio</a> 
     <br /> 
     <div class="green-text">Template by <a href="https://github.com/schouffy/gamedev-portfolio" target="blank">schouffy</a> 
-    and <a href="https://github.com/11BelowStudio/gamedev-portfolio-template" target="blank">11BelowStudio</a></div>
+    and <a href="https://github.com/11BelowStudio/gamedev-portfolio-template/tree/vite-vue3" target="blank">11BelowStudio</a></div>
     <div class="beian"><br /> <a href="https://beian.miit.gov.cn/" target="blank">苏ICP备2022016248号-1</a></div>
 </div>
 <div class="right">Reach me at <a href="mailto:TsingLoo@Outlook.com">TsingLoo@Outlook.com</a> or <router-link to="/contact">through here</router-link></div>
