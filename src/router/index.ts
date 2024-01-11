@@ -13,6 +13,10 @@ export function createRouter(){
     history: createWebHistory('/portfolio/'),
     routes: [
       {
+        path: '/',
+        redirect: '/index.html'  // Redirect from base path to /index.html
+      },
+      {
         path: '/index.html',
         name: 'Root',
         component: AboutView
