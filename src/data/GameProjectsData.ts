@@ -3,29 +3,9 @@ import ProjectData from '@/data/ProjectData.ts'
 export default [
     new ProjectData("project-1", "EolaneVR", "https://images.tsingloo.com/ShareX/2024/01/chrome_c1onMoS0gY.gif", 
     `
-    <style>
-    body {
-        margin: 50;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .video-container {
-        padding: 5px; /* Adjust padding as needed */
-        box-sizing: border-box;
-        width: 80%; /* Video container takes 80% of body width */
-        max-width: 1920px; /* Maximum width of the video container */
-    }
-    video {
-        width: 100%; /* Video takes full width of its container */
-        height: auto; /* Height is set automatically */
-    }
-    </style>
-
     <div class="paragraph">
      <strong>EolaneVR</strong> is a Virtual Reality training system for the feeder loading operation of Surface-mount technology(SMT) customized for <strong><a href="https://www.eolane.com/en/eolane-china">éolane CHINA</a></strong>.
+     </br>
      </br>
      As the project leader, I spearheaded the development process, made the design, coordinated task assignments, and conducted feedback reviews for better iteration.
      </br>
@@ -44,10 +24,11 @@ export default [
     <div class="paragraph">
         Main features :
         <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
+        <li>Training mode with detailed instruction</li>
+        <li>Exam mode with reviewable results</li>
+        <li>Real-time tape simulation</li>
+        <li>Full feeder loading process</li>
+        <li>Voice guide</li>
         </ul>
     </div>
 
