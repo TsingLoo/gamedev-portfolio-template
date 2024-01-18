@@ -1,11 +1,9 @@
 # What is this ?
-This is a portfolio template that you can use to showcase your work, especially if it's comprised of projects that should be shown in a very visual way.
+This portfolio is constructed from the base template provided by [schouffy](https://github.com/schouffy/gamedev-portfolio), further enhanced by incorporating elements from [11BelowStudio/gamedev-portfolio-(template/tree/vite-vue3](https://github.com/11BelowStudio/gamedev-portfolio-template/tree/vite-vue3).  
 
-Looking for a game developer job, I needed a portfolio to present my work to recruiters. I found a lot of custom made portfolios, but no easy to use template unless I used Wordpress. Which was overkill to me because a static HTML/JS website would do fine.
+In an effort to reduce loading times, external resources such as the [Karla fonts family](https://fonts.google.com/specimen/Karla?query=ka) and [Font Awesome assets](https://fontawesome.com/v4/get-started/) have been internally hosted within this portfolio.
 
-So i created my own using VueJS, keeping in mind that I wanted it to be easily customisable so other people can use this as a base to make their own. It's very simple, static, fast and responsive.
-
-For a real world use case, check my portfolio: https://scheefer.me
+For a real world use case, welcome to check my portfolio: [game.tsingloo.com/portfolio](https://game.tsingloo.com/portfolio/index.html)
 
 
 # How to use
