@@ -3,8 +3,9 @@
     <h1>Projects</h1>
 
     <div style="margin-bottom: 30px;">
-      The following are some projects I've made or heavily contributed to.
-    </div>
+      I'm excited about working on various projects that enhance my skills in C#, C++, Python, JavaScript, Unity, OpenCV, OpenGL, etc.<br><br>
+      My experience spans various domains, from software frameworks to specific gameplay mechanics and indie games to Virtual Reality applications.
+      I enjoy handling various tasks within these areas. Below, I present some projects showing my approach, perspective, and interests in these fields.</div>
 
     <ProjectsList v-bind:projects="projects" />
 
