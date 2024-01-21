@@ -104,7 +104,7 @@ export default [
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
     </div>
     `, "#383838"),
-    new ProjectData("project-4", "ABB Digital Twin", "img/projects/project-4-icon.png", `
+    new ProjectData("project-4", "ABB Digital Twin", "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_ueCyolgPGb.gif", `
     <div class="paragraph">
     <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
     <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
