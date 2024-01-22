@@ -9,7 +9,7 @@
         Recently, I've been engaged with Asgard's Wrath 2 and Palworld, and I am thrilled at the prospect of creating epic content inspired by such groundbreaking games.
       </div>
 
-      <div style="margin-top: 20px;">I work on various projects and write a <a href='http://www.tsingloo.com' target='blank'>blog</a> to share my experiences.</div>
+      <div style="margin-top: 20px;">I work on various projects and write <a href='http://www.tsingloo.com' target='blank'>blogs</a> to share my experiences.</div>
       <router-link to="/game-projects" class="wide-button">Click here to view my projects</router-link>     
 
       <div style="margin-top: 20px;">I'm currently applying for a <strong>M.S. in Computer Science</strong> in the field of <strong>Software Engineering</strong>, <strong>Graphics</strong>, <strong>Human–Computer Interaction</strong> and <strong>Game Development</strong>. I'm always enthusiastic about meeting new people and working together to create something innovative and exciting.</div>
