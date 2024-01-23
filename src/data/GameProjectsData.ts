@@ -45,7 +45,10 @@ export default [
     <br>
     The project originally designed and implemented the user guide system with configurable text and voice from serialized assets like .csv and reserved customizable callbacks and events in the behavior of critical objects like feeders and racks for future extension. 
     The whole mechanism is driven by events and object-oriented, so the user can interact with the feeder at different stages, and the system can respond to the user's action accordingly. 
-    Besides the core mechanism, I developed some powerful components and toolkits to extend the existing plugins and packages(e.g.,<a href="https://github.com/TsingLoo/TinyUFramework/blob/117caf045c1ab9f485c49643f42e87ee3fa4ae22/Editor/EditorHelper.cs#L261"><i class="fa fa-github fa-lg fa-fw"></i>Localization Asset Generator</a>), 
+    Besides the core mechanism, I developed some powerful components and toolkits to extend the existing plugins and packages(e.g.,
+        <a href="https://github.com/TsingLoo/TinyUFramework/blob/117caf045c1ab9f485c49643f42e87ee3fa4ae22/Editor/EditorHelper.cs#L261"><i class="fa fa-github fa-lg fa-fw"></i>Localization Asset Generator</a>,
+        <a href="https://github.com/TsingLoo/TinyUFramework/blob/e1286621f6131892dc3a22fa34605d8fd8b21796/Utils/CoolDowns.cs"><i class="fa fa-github fa-lg fa-fw"></i>CoolDowns Manager</a>
+        ), 
     for team to boost development.
     </div>
 
@@ -63,7 +66,7 @@ export default [
 
     <div>
         <div class="notice">
-        You can download the submitted final report on this from <a href="https://game.tsingloo.com/backup/Final_Report.pdf" target="_blank">here <i class="	fa fa-file-pdf-o"></i></a>.
+        Download the submitted final report from <a href="https://game.tsingloo.com/backup/Final_Report.pdf" target="_blank">here<i class="	fa fa-file-pdf-o"></i></a>
         </div>
     </div>
 
@@ -106,36 +109,54 @@ export default [
 
     
     <div class="paragraph center">
-    <img src="http://images.tsingloo.com/image-20231118223027230.png"/>
+    <img class="one-image" src="http://images.tsingloo.com/image-20231118223027230.png"/>
     </div>
 
     </div>
     `, "#383838"),
     new ProjectData("project-3", "The Verdant Revival", "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_c6k0aFotAQ.gif", `
     <div class="paragraph">
-        <strong>Drawing Overload</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@miphotograpRhy">Miesha Maiden</a>.
-    </div>
+    <h3>Overview</h3> 
+        <strong>The Verdant Revival</strong> is a survival game using Unity Engine. It is an adventure where player steps into a world that’s gray and full of pollution. 
+        Here, player's mission is to clean up the mess and turn the island from gray to green. Do this by gathering trash, recycling it into handy items, and reviving tons of trees and plants.
+        <br>
+        <br>
+        Here is the demo video of the prototype:
+        </div>
+
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <video controls style="width:100%; max-width:1920px; height:auto;" poster="http://images.tsingloo.com/screenshot_verdantrevival.png">>
+        <source src="https://game.tsingloo.com/Videos/VerdantRevival_Demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div>
+    <div class="notice">
+    Download the Windows Build from <a href="https://game.tsingloo.com/backup/TheVerdantRevival.zip" target="_blank">here<i class="fa fa-file-zip-o"></i></a>, 
+    Game Design Report is available <a href="https://game.tsingloo.com/backup/TheVerdantRevival_GameDesignReport.pdf" target="_blank">here<i class="fa fa-file-pdf-o"></i></a>
     </div>
+</div>
 
     <div class="paragraph">
-        Main Features :
+    <h3>Main Features</h3> 
         <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
+        <li>Environmental estoration mechanic</li>
+        <li>Day-Night cycle</li>
+        <li>Energy mechanic</li>
+        <li>Perlin Noise-based map generator</li>
+        <li>Performance optimization by <a href="https://docs.unity3d.com/Manual/JobSystem.html">Job System</a>
         </ul>
     </div>
 
     <div class="paragraph">
-        <div class="notice">
-        Playable in the browser (WebGL) on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-        </div>
+    <h3>Technical Insights</h3>
     </div>
+    <strong>The Verdant Revival</strong>'s UI Manager comes from my <a href="https://github.com/TsingLoo/TinyUFramework/tree/main"><i class="fa fa-github fa-lg fa-fw"></i>TinyUFramework</a> and works well 
+    with <a href="https://feel.moremountains.com/" target="_blank">FEEL</a> to load the scene and enhance interaction feedbacks. It automalcially registers the UI Panel prefabs in the asset folder and maintains theirs states 
+    to support the switch bettween different panels. 
+    <br>
+    The projects uses Burst Compiler to parrallel the movements of blue cubes to simulate waves, getting a perfromance boost froom 
 
     <div class="paragraph center">
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
