@@ -30,7 +30,7 @@
 
 .wide-button {
   display: inline-block;
-  width: 100%; /* Makes the button take the full width of its container */
+  width: 95%; /* Makes the button take the full width of its container */
   padding: 10px; /* Adds some padding for better visuals */
   background-color: #696969; /* Example background color */
   color: #dcdcdc; /* Text color */

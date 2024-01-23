@@ -9,7 +9,8 @@
         <div class="dialog-content">
           <div v-html="htmlContent"></div>
           <div class="dialog-bottom">
-          <a @click="$emit('close')" class="dialog-close-button">Close</a>
+          <br>
+          <a @click="$emit('close')" class="dialog-close-button"><i class="fa fa-times fa-lg fa-fw"></i>Close</a>
         </div>
         </div>
       </div>
