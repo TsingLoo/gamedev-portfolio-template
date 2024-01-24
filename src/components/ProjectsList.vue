@@ -19,7 +19,7 @@
     </div>
 
     <ProjectDetailsOverlay
-      v-on:close="showPopup = false"
+      v-on:close="closePopup"
       :visible="showPopup"
       :title="popupTitle"
       :htmlContent="popupContent"
@@ -50,15 +50,17 @@ export default defineComponent({
     };
   },
   methods: {
-    showDetails: function (item: ProjectData) {
-      // if (event) {
-      //   alert(event.target);
-      // }
+    showDetails: function (item) {
+      // Set the new URL, change the space in item.name to '-' and add it to the URL
+      const newUrl = `${window.location.href.split('/').join('/')}/${item.name.replace(/\s+/g, '-')}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+
+      // Existing logic
       this.popupTitle = item.name;
       this.popupColor = item.accentColor;
       this.popupContent = item.htmlDescription;
       this.showPopup = true;
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
     },
     showDetailsByName: function (name: string) {
       const item = this.projects.find((p) => p.name === name);
@@ -66,6 +68,12 @@ export default defineComponent({
         this.showDetails(item);
       }
     },
+    closePopup: function() {
+      this.showPopup = false;
+      // Set the new URL
+      const newUrl = `${window.location.href.split('/').slice(0, -1).join('/')}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    }
   },
 });
 </script>
