@@ -122,6 +122,9 @@ export default [
         Do this by gathering trash, recycling it into handy items, and reviving tons of trees and plants.
         <br>
         <br>
+        It was my individual courwork for CPT306-2223-S2-Principles of Computer Games Design.
+        <br>
+        <br>
         Here is the demo video of the prototype:
         </div>
 
@@ -152,7 +155,6 @@ export default [
 
     <div class="paragraph">
     <h3>Technical Insights</h3>
-    </div>
     <strong>The Verdant Revival</strong>'s UI Manager comes from my <a href="https://github.com/TsingLoo/TinyUFramework/tree/main"><i class="fa fa-github fa-lg fa-fw"></i>TinyUFramework</a> and works well 
     with <a href="https://feel.moremountains.com/" target="_blank">FEEL</a> to load the scene and enhance interaction feedback. 
     It automatically registers the UI Panel prefabs in the asset folder and maintains their states to support the switch between different panels.
@@ -165,61 +167,91 @@ export default [
     Inspired by <a href="https://zelda.nintendo.com/tears-of-the-kingdom/">Zelda</a>, the game has a day-night cycle and the player's energy is demonstrated as a green ring.
     The energy will be recovered when the player is idle for a certain time and reduced when the player dashes. 
     The various feedbacks, screen effects and sounds are added to improve the overall feeling and experience.
-
+    </div>
     `, "#e9a13c"),
-    new ProjectData("project-4", "ABB Digital Twin", "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_ueCyolgPGb.gif", `
+    new ProjectData("project-4", "ABB Digital Twin", "https://images.tsingloo.com/abb-stack.gif", `
     <div class="paragraph">
-    <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-    <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
+    <h3>Overview</h3> 
+    <strong>ABB Digital Twin</strong> is a system that allows users to monitor the state of joints and motors on the screen and control the robot arm by dragging the slider and setting a specific value in real time. 
+    <br>
+    <br>
+    I handled the socket communication between Unity, Matlab, and ABB arm and extracted events from the dataflow, thus extending essential features based on the <a href="https://github.com/rparak/Unity3D_Robotics_ABB"><i class="fa fa-github fa-lg fa-fw"></i>Unity3D_Robotics_ABB</a>.
+    <br>
+    <br> 
+
+    <div class="paragraph center">
+    <img class="pc-screenshot" src="https://images.tsingloo.com/abb-joints-control.gif" alt="Drawing Overload Screenshot" />
+    <img class="pc-screenshot" src="https://images.tsingloo.com/abb-linear.gif" alt="Drawing Overload Screenshot" />
+    </div>
+
     </div>
     
     <div class="paragraph">
-        Main Features :
+        <h3>Main Features</h3>
         <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
+        <li>Bidirectional control</li>
+        <li>Inversed kinematic</li>
+        <li>Socket communication</li>
+        <li>Event driven</li>
         </ul>
     </div>
 
     <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        </div>
+    <h3>Technical Insights</h3> 
+    This project is mainly separated into the robotic arm and the client Unity program on PC. 
+    To maintain the communication, the Unity program pulls a thread to handle the data flow and check the value change in Update(). 
+    The robotic arm will report its current state and task by around 20Hz and then be parsed in Unity to trigger corresponding events.
+    <br> 
+    <br> 
+    Following the Model View Controller design pattern, Matlab takes the role of the controller to handle the solution of Inversed kinematic problems defined by the user's input command. 
+    The states are organized as BindableProperty and register to UI elements, and the UI elements are only responsible for displaying and pushing new commands instead of operating on the state's data directly, 
+    thus isolating the data from control logic and friendly for future extension.
     </div>
 
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-    </div>
+
     `, "#ba372e"),
     new ProjectData("project-5", "RTS Demo", "https://images.tsingloo.com/ShareX/2024/01/chrome_rmhnexaa9k.gif", `
     <div class="paragraph">
-    <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-    <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
+    <a href="https://github.com/TsingLoo/RealTimeStrategy"><i class="fa fa-github fa-lg fa-fw"></i><strong>RTS Demo</strong></a> is a multiplayer realtime strategy game. It supports 5 players at the maximum play on the same time. It supports Game Lobby, Buliding, Single and Group Coomand, etc.
+
+    <br>
+    <br>
+    I followed tutorials on <a href="https://www.gamedev.tv/p/unity-multiplayer-coding-and-networking">GameDev.tv</a> to compelet this simple but complete demo:
+    <br> 
+
+
+    <div class="paragraph center">
+    <iframe class="youtube" src="https://player.bilibili.com/player.html?aid=635202527&bvid=BV1rb4y1Y75s&cid=469752869&p=1" frameborder="0" framespacing="0" allowfullscreen></iframe>
     </div>
+
+    <div>
+        <div class="notice">
+    Download the Windows Build from <a href="https://game.tsingloo.com/backup/RTS.zip" target="_blank">here<i class="fa fa-file-zip-o"></i></a>
+        </div>
+    </div>
+
+</div>
     
     <div class="paragraph">
-        Main Features :
+    <h3>Main Features</h3>
         <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
+        <li>Multiplayer powered by <a href="https://github.com/TsingLoo/RealTimeStrategy"><i class="fa fa-github fa-lg fa-fw"></i><strong>Mirror</strong></a></li>
+        <li>Build and destroy</li>
+        <li>Unit and Group command</li>
         </ul>
     </div>
 
     <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        </div>
+    <h3>Technical Insights</h3> 
+    This project takes client server architecture to handle multiplayer mode. It supprts host lobby and join the existing game by input IP address and port. 
+    As the Mirror's feature, the owner of a game session will be the host server. All the anthentication required function gets permitted on server and the server syncs the objects to client.
+    Remote Procedure Call is widely applied on this project. Build and destoy tanks are executed through RPCs, ensuring that actions performed by one player are accurately replicated across all connected clients. 
+    
     </div>
 
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-    </div>
+
+
+    
     `, "#5a78af"),
     new ProjectData("project-6", "Space Fighter", "https://images.tsingloo.com/ShareX/2024/01/SpaceFighter_cCMGTNCmsN.gif", `
     <div class="paragraph">
@@ -228,7 +260,7 @@ export default [
     </div>
     
     <div class="paragraph">
-        Main features :
+    <h3>Main Features</h3>
         <ul>
         <li>Some stuff</li>
         <li>Some great stuff</li>
@@ -236,13 +268,7 @@ export default [
         <li>And then some</li>
         </ul>
     </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        </div>
-    </div>
-
+    
     <div class="paragraph center">
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
@@ -255,9 +281,9 @@ export default [
     </div>
     
     <div class="paragraph">
-        Main features :
+    <h3>Main Features</h3>
         <ul>
-        <li>Some stuff</li>
+        <li>Multiplayer powered by Mirror</li>
         <li>Some great stuff</li>
         <li>More awesome stuff</li>
         <li>And then some</li>
