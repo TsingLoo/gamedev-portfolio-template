@@ -27,7 +27,7 @@ export function createRouter(){
         component: ResumeView
       },
       {
-        path: '/game-projects',
+        path: '/game-projects/:projectName?',
         name: 'Game Projects',
         component: GameView
       },

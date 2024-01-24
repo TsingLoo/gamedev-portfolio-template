@@ -60,6 +60,12 @@ export default defineComponent({
       this.showPopup = true;
       window.scrollTo(0,0);
     },
+    showDetailsByName: function (name: string) {
+      const item = this.projects.find((p) => p.name === name);
+      if (item) {
+        this.showDetails(item);
+      }
+    },
   },
 });
 </script>
