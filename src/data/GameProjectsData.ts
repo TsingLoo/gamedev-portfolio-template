@@ -212,11 +212,12 @@ export default [
     `, "#ba372e"),
     new ProjectData("project-5", "RTS Demo", "https://images.tsingloo.com/ShareX/2024/01/chrome_rmhnexaa9k.gif", `
     <div class="paragraph">
-    <a href="https://github.com/TsingLoo/RealTimeStrategy"><i class="fa fa-github fa-lg fa-fw"></i><strong>RTS Demo</strong></a> is a multiplayer realtime strategy game. It supports 5 players at the maximum play on the same time. It supports Game Lobby, Buliding, Single and Group Coomand, etc.
+    <h3>Overview</h3> 
+    <a href="https://github.com/TsingLoo/RealTimeStrategy"><i class="fa fa-github fa-lg fa-fw"></i><strong>RTS Demo</strong></a> is a multiplayer real-time strategy game. It supports five players at the maximum play at the same time. It supports Game Lobby, Building, Single and Group Command, etc.
 
     <br>
     <br>
-    I followed tutorials on <a href="https://www.gamedev.tv/p/unity-multiplayer-coding-and-networking">GameDev.tv</a> to compelet this simple but complete demo:
+    I followed the tutorial on <a href="https://www.gamedev.tv/p/unity-multiplayer-coding-and-networking">GameDev.tv</a> to complete this simple but complete demo:
     <br> 
 
 
@@ -237,26 +238,23 @@ export default [
         <ul>
         <li>Multiplayer powered by <a href="https://github.com/TsingLoo/RealTimeStrategy"><i class="fa fa-github fa-lg fa-fw"></i><strong>Mirror</strong></a></li>
         <li>Build and destroy</li>
-        <li>Unit and Group command</li>
+        <li>Single unit and group units command</li>
         </ul>
     </div>
 
     <div class="paragraph">
     <h3>Technical Insights</h3> 
-    This project takes client server architecture to handle multiplayer mode. It supprts host lobby and join the existing game by input IP address and port. 
-    As the Mirror's feature, the owner of a game session will be the host server. All the anthentication required function gets permitted on server and the server syncs the objects to client.
-    Remote Procedure Call is widely applied on this project. Build and destoy tanks are executed through RPCs, ensuring that actions performed by one player are accurately replicated across all connected clients. 
+    This project takes client-server architecture to handle multiplayer mode. It supports the host lobby and joins the existing game by inputting the IP address and port.  
+    As the Mirror's feature, the owner of a game session will be the host server. All the authentication-required functions are permitted on the server, and the server syncs the objects to the client.
+    Remote Procedure Call is widely applied to this project. Build and destroy tanks are executed through RPCs, ensuring that actions performed by one player are accurately replicated across all connected clients.  
     
     </div>
-
-
-
-    
     `, "#5a78af"),
     new ProjectData("project-6", "Space Fighter", "https://images.tsingloo.com/ShareX/2024/01/SpaceFighter_cCMGTNCmsN.gif", `
     <div class="paragraph">
-    <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-    <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
+    <h3>Overview</h3> 
+    <strong>Space Fighter</strong> is a 2D casual game. The player controls a spaceship to avoid the debris and collect the RGB particle to get the corresponding score. 
+    The spped of incoming particles will get faster as player getting more score. The player is able to direct the Space Fighter by easily moving in the dark grey colouredPlayArea (See Figure 1 above). The black barriers should block the motion of the Space Fighter towardboth the Flow and Storage Areas. Thus, a collision with the black barriers will stop the motionof theSpace Fighter.
     </div>
     
     <div class="paragraph">
