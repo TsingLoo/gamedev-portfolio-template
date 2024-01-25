@@ -319,6 +319,13 @@ export default [
         </ul>
     </div>
 
+    <div>
+    <div class="notice">
+    Download the Android Build from <a href="https://game.tsingloo.com/backup/VAP_Demo.apk" target="_blank">here<i class="fa fa-file-zip-o"></i></a> (Verified on <a href="https://www.picoxr.com/cn/neo3/">pico neo 3</a>)
+    </div>
+</div>
+
+
     <div class="paragraph">
     <h3>Technical Insights</h3> 
     <strong>Virtual Assembly</strong> uses Unity's XR Interaction Toolkit to manage virtual reality stuff. 
