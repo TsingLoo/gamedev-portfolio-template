@@ -16,7 +16,7 @@ export default [
 
     <!-- Video Frame -->
     <div class="paragraph center">
-        <video controls style="width:100%; max-width:1920px; height:auto;" poster="http://images.tsingloo.com/eolane_wide_logo.png">>
+        <video controls style="width:100%; max-width:1920px; height:auto;" poster="https://images.tsingloo.com/eolane_wide_logo.png">>
             <source src="https://game.tsingloo.com/Videos/EolaneVR_Demo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -37,7 +37,7 @@ export default [
     <div class="paragraph">
     <h3>Technical Insights</h3> 
 
-    This project uses <a href="https://earnestrobot.notion.site/earnestrobot/Auto-Hand-f78a404f6baf4d85ab705c0d1f92c30e">Auto Hand</a> and <a href="https://qframework.cn/qf">QFramework</a> to handle the interaction with
+    <strong>EolaneVR</strong> uses <a href="https://earnestrobot.notion.site/earnestrobot/Auto-Hand-f78a404f6baf4d85ab705c0d1f92c30e">Auto Hand</a> and <a href="https://qframework.cn/qf">QFramework</a> to handle the interaction with
     OpenXR compatible devices(e.g., Meta Quest 2) and build up the base skeleton following <a href="https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/">S.O.L.I.D.</a> principles for agile development.
 
     It incorporates the simulation of the tape and film using Obi Rope and Filo packages. It supports multiple modes like training and exam for users to practice and test their skills and it achieves realistic illumination and shadow by using the HDRP pipeline and Adaptive Probe Volume.
@@ -101,7 +101,7 @@ export default [
     By offering AbstractPedestrianModelProvider class, users can inherit it to make their provider support loading humanoid models for specific requirements. 
     <div class="paragraph center">
     <img class="pc-screenshot" src="https://images.tsingloo.com/image-20230302220210978_virtualchessboard.png"/>
-    <img class="pc-screenshot" src="http://images.tsingloo.com/a0435962706012e99823eb0e827e900.jpg" alt="Drawing Overload Screenshot" />
+    <img class="pc-screenshot" src="https://images.tsingloo.com/a0435962706012e99823eb0e827e900.jpg" alt="Drawing Overload Screenshot" />
     </div>
 
     <strong><a href="https://github.com/TsingLoo/MultiviewX_Perception"><i class="fa fa-github fa-lg fa-fw"></i>MultiviewX_Perception</a></strong> is a Python program designed for processing and annotating the data and images from wildperception. 
@@ -109,7 +109,7 @@ export default [
 
     
     <div class="paragraph center">
-    <img class="one-image" src="http://images.tsingloo.com/image-20231118223027230.png"/>
+    <img class="one-image" src="https://images.tsingloo.com/image-20231118223027230.png"/>
     </div>
 
     </div>
@@ -129,7 +129,7 @@ export default [
         </div>
 
     <div class="paragraph center">
-    <video controls style="width:100%; max-width:1920px; height:auto;" poster="http://images.tsingloo.com/TheVerdantRevival_Demo.jpg">>
+    <video controls style="width:100%; max-width:1920px; height:auto;" poster="https://images.tsingloo.com/TheVerdantRevival_Demo.jpg">>
         <source src="https://game.tsingloo.com/Videos/TheVerdantRevival_Demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -198,7 +198,7 @@ export default [
 
     <div class="paragraph">
     <h3>Technical Insights</h3> 
-    This project is mainly separated into the robotic arm and the client Unity program on PC. 
+    <strong>ABB Digital Twin</strong> is mainly separated into the robotic arm and the client Unity program on PC. 
     To maintain the communication, the Unity program pulls a thread to handle the data flow and check the value change in Update(). 
     The robotic arm will report its current state and task by around 20Hz and then be parsed in Unity to trigger corresponding events.
     <br> 
@@ -244,7 +244,7 @@ export default [
 
     <div class="paragraph">
     <h3>Technical Insights</h3> 
-    This project takes client-server architecture to handle multiplayer mode. It supports the host lobby and joins the existing game by inputting the IP address and port.  
+    <a href="https://github.com/TsingLoo/RealTimeStrategy"><i class="fa fa-github fa-lg fa-fw"></i><strong>RTS Demo</strong></a> takes client-server architecture to handle multiplayer mode. It supports the host lobby and joins the existing game by inputting the IP address and port.  
     As the Mirror's feature, the owner of a game session will be the host server. All the authentication-required functions are permitted on the server, and the server syncs the objects to the client.
     Remote Procedure Call is widely applied to this project. Build and destroy tanks are executed through RPCs, ensuring that actions performed by one player are accurately replicated across all connected clients.  
     
@@ -263,7 +263,7 @@ export default [
     <br>
     Here is the demo video of the prototype:
     <div class="paragraph center">
-    <video controls style="width:100%; max-width:720px; height:auto;" poster="http://images.tsingloo.com/SpaceFighter_Demo.jpg">>
+    <video controls style="width:100%; max-width:720px; height:auto;" poster="https://images.tsingloo.com/SpaceFighter_Demo.jpg">>
         <source src="https://game.tsingloo.com/Videos/SpaceFighter_Demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -286,38 +286,50 @@ export default [
 
     <div class="paragraph">
     <h3>Technical Insights</h3> 
-    <strong>Space Fighter</strong> uses my <a href="https://github.com/TsingLoo/TinyUFramework/tree/main"><i class="fa fa-github fa-lg fa-fw"></i>TinyUFramework</a> to handle the UI layout and speed up the developemnt with its utils.
-    The particles storage area is managed as a 2-dimentional array. Instead of hardly placing the incoming particle when it hits the placed one, this project allows the particle to bounce according to physics and do a tween to move to given place.
+    <strong>Space Fighter</strong> uses my <a href="https://github.com/TsingLoo/TinyUFramework/tree/main"><i class="fa fa-github fa-lg fa-fw"></i>TinyUFramework</a> to handle the UI layout and speed up the developemnt with its utils. 
+    The particles storage area is managed as a 2-dimentional array. 
+    Instead of hardly placing the incoming particle when it hits the placed one, this project allows the particle to bounce according to physics and do a tween to move to given place. 
     This requires the safety check when a free particle hit a particle in tween to avoid overlapping and false placement.
+    </div>
 
     
     `, "#80cbc4"),
     new ProjectData("project-7", "Virtual Assembly", "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_Ij6JuZOjWZ.gif", `
     <div class="paragraph">
-        <strong>Cloud Drew Land</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@cottonbro">cottonbro</a>.
+        <h3>Overview</h3> 
+        <strong>Virtual Assembly</strong> is the first Virtual Reality project I worked on. It allows user to assembly units to complete a specific machine component accodring to its blueprint. 
+        <br>
+        <br>
+            I convert the project from a PC program to Virtual Reality program, opetimazing its interaction experience. 
+        <br>
+        <br>
+        Here is the demo video of the prototype:
+        <div class="paragraph center">
+        <video controls style="width:100%; max-width:720px; height:auto;" poster="https://images.tsingloo.com/Virtual_Assembly_Demo.jpg">>
+            <source src="https://game.tsingloo.com/Videos/Virtual_Assembly_Demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
     
     <div class="paragraph">
     <h3>Main Features</h3>
         <ul>
-        <li>Multiplayer powered by Mirror</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
+        <li>Tree structure for assembly</li>
+        <li>Multiple blueprints for choice</li>
         </ul>
     </div>
 
     <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-        </div>
+    <h3>Technical Insights</h3> 
+    <strong>Virtual Assembly</strong> uses Unity's XR Interaction Toolkit to manage virtual reality stuff. 
+    To enable dual-hand interactions, I redesigned the input system to accommodate simultaneous multi-object handling. 
+    This involved decoupling the input and object behaviors from the previous PC-centric design. 
+    Instead of relying solely on raycasting for object selection and placement, collision and distance is detected between the hands and objects to decide which object is being interacted with.
+    <br>
+    <br>
+    The project uses a tree structure to represent the assembly process. Each node in the tree is a unit, and the leaf node is the final component. 
+    If some units are not visible by occlusion, it will be outlined and blink to remind the user to complete the assembly.
     </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-    </div>`, "#9ca5c0")
+    
+    `, "#9ca5c0") 
 ];
