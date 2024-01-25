@@ -42,10 +42,15 @@ export function createRouter(){
         component: ContactView
       },
       {
+        path: '/PageNotFound',
+        name: 'NotFound',
+        component: E404View
+      },
+      {
         path: '/:pathMatch(.*)',
         name: 'NotFound',
         component: E404View
-      }
+      },
     ]
   })
 }

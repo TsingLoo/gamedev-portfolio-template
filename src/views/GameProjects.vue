@@ -27,15 +27,28 @@ export default defineComponent({
   },
   mounted() {
     let projectName = this.$route.params.projectName.replace(/-/g, ' ');
+    if (projectName.length === 0) {
+      return;
+    }
     console.log("GameProjects.vue mounted, projects:", projectName);
     
 
     this.$nextTick(() => {
-      if (this.$refs.projects) {
-        this.$refs.projects.showDetailsByName(projectName);
-      } else {
-        console.log('projects is not available');
-      }
+        if (this.$refs.projects) {
+          let ret = this.$refs.projects.showDetailsByName(projectName);
+          if (!ret) {
+            console.log('project not found');
+            // switch to 404 page
+            // {
+            //   path: '/:pathMatch(.*)',
+            //   name: 'NotFound',
+            //   component: E404View
+            // }
+            window.location.href = "/portfolio/PageNotFound";
+          }
+        } else {
+          console.log('projects is not available');
+        }
       }
     );
   },

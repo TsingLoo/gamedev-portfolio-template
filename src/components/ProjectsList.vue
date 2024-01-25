@@ -51,9 +51,13 @@ export default defineComponent({
   },
   methods: {
     showDetails: function (item) {
+      let projectName = item.name.replace(/\s+/g, '-');
       // Set the new URL, change the space in item.name to '-' and add it to the URL
-      const newUrl = `${window.location.href.split('/').join('/')}/${item.name.replace(/\s+/g, '-')}`;
-      window.history.pushState({ path: newUrl }, '', newUrl);
+      // set the URL only when the original url doesn't contain the project name
+      if (!window.location.href.includes(projectName)) {
+        const newUrl = `${window.location.href.split('/').join('/')}/${projectName}`;
+        window.history.pushState({ path: newUrl }, '', newUrl);
+      }
 
       // Existing logic
       this.popupTitle = item.name;
@@ -64,9 +68,13 @@ export default defineComponent({
     },
     showDetailsByName: function (name: string) {
       const item = this.projects.find((p) => p.name === name);
+      if (item === undefined) {
+        return false;
+      }
       if (item) {
         this.showDetails(item);
       }
+      return true;
     },
     closePopup: function() {
       this.showPopup = false;
