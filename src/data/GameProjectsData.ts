@@ -129,8 +129,8 @@ export default [
         </div>
 
     <div class="paragraph center">
-    <video controls style="width:100%; max-width:1920px; height:auto;" poster="http://images.tsingloo.com/screenshot_verdantrevival.png">>
-        <source src="https://game.tsingloo.com/Videos/VerdantRevival_Demo.mp4" type="video/mp4">
+    <video controls style="width:100%; max-width:1920px; height:auto;" poster="http://images.tsingloo.com/TheVerdantRevival_Demo.jpg">>
+        <source src="https://game.tsingloo.com/Videos/TheVerdantRevival_Demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -148,7 +148,7 @@ export default [
         <li>Environmental estoration mechanic</li>
         <li>Day-Night cycle</li>
         <li>Energy mechanic</li>
-        <li>Perlin Noise-based map generator</li>
+        <li>Perlin Noise-based map generator with seed</li>
         <li>Performance optimization by <a href="https://docs.unity3d.com/Manual/JobSystem.html">Job System</a>
         </ul>
     </div>
@@ -253,24 +253,44 @@ export default [
     new ProjectData("project-6", "Space Fighter", "https://images.tsingloo.com/ShareX/2024/01/SpaceFighter_cCMGTNCmsN.gif", `
     <div class="paragraph">
     <h3>Overview</h3> 
-    <strong>Space Fighter</strong> is a 2D casual game. The player controls a spaceship to avoid the debris and collect the RGB particle to get the corresponding score. 
-    The spped of incoming particles will get faster as player getting more score. The player is able to direct the Space Fighter by easily moving in the dark grey colouredPlayArea (See Figure 1 above). The black barriers should block the motion of the Space Fighter towardboth the Flow and Storage Areas. Thus, a collision with the black barriers will stop the motionof theSpace Fighter.
-    </div>
+    <strong>Space Fighter</strong> is a 2D causal Match 3 game. The player controls a spaceship to avoid the debris and collect the RGB particle to get the corresponding score. 
+    The spped of incoming particles will get faster as player getting more score. 
     
+    <br>
+    <br>
+    It was my individual courwork for CPT306-2223-S2-Principles of Computer Games Design.
+    <br>
+    <br>
+    Here is the demo video of the prototype:
+    <div class="paragraph center">
+    <video controls style="width:100%; max-width:720px; height:auto;" poster="http://images.tsingloo.com/SpaceFighter_Demo.jpg">>
+        <source src="https://game.tsingloo.com/Videos/SpaceFighter_Demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div>
+    <div class="notice">
+    Download the Windows Build from <a href="https://game.tsingloo.com/backup/SpaceFighter.zip" target="_blank">here<i class="fa fa-file-zip-o"></i></a> 
+    </div>
+</div>
+
     <div class="paragraph">
     <h3>Main Features</h3>
         <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
+        <li>Match 3 mechanism</li>
+        <li>Tween animation</li>
+        <li>Physcial collision and bounce</li>
         </ul>
     </div>
+
+    <div class="paragraph">
+    <h3>Technical Insights</h3> 
+    <strong>Space Fighter</strong> uses my <a href="https://github.com/TsingLoo/TinyUFramework/tree/main"><i class="fa fa-github fa-lg fa-fw"></i>TinyUFramework</a> to handle the UI layout and speed up the developemnt with its utils.
+    The particles storage area is managed as a 2-dimentional array. Instead of hardly placing the incoming particle when it hits the placed one, this project allows the particle to bounce according to physics and do a tween to move to given place.
+    This requires the safety check when a free particle hit a particle in tween to avoid overlapping and false placement.
+
     
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-    </div>
     `, "#80cbc4"),
     new ProjectData("project-7", "Virtual Assembly", "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_Ij6JuZOjWZ.gif", `
     <div class="paragraph">
