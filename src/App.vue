@@ -27,9 +27,9 @@ export default defineComponent({
 
 // Preload heavy images or gifs that are used in other pages
 Helpers.preloadImages([
-  "img/projects/project-1-icon.png",
-  "img/projects/project-2-icon.png",
-  "img/projects/project-3-icon.png"
+  "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_a6lZz0HJuk.gif",
+  "https://images.tsingloo.com/ShareX/2024/01/msedge_6kr9fWtPmd.gif",
+  "https://images.tsingloo.com/ShareX/2024/01/PotPlayerMini64_c6k0aFotAQ.gif"
 ]);
 
 </script>
