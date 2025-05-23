@@ -12,7 +12,7 @@
       </li>
       <li>
         <i class="fa fa-envelope-o fa-lg fa-fw"></i>
-        <a href="mailto:TsingLoo@Outlook.com" target="_blank">TsingLoo@Outlook.com</a>
+         <a href="mailto:xiaonan.application@outlook.com" target="_blank">xiaonan.application@outlook.com</a> / <a href="mailto:tsingloo@outlook.com" target="_blank">tsingloo@outlook.com</a>
       </li>
       <li>
         <i class="fa fa-github fa-lg fa-fw"></i>
@@ -48,7 +48,7 @@ li {
 
 @media only screen and (min-width: 620px){
   ul {
-    padding-inline-start: 40px;
+    padding-inline-start: 0px;
   }
 
   li {
