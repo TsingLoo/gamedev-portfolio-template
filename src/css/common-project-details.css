@@ -1,0 +1,86 @@
+.paragraph {
+  margin-bottom: 20px;
+  line-height: 1.6; /* Example: improve readability */
+}
+.paragraph.center { /* More specific selector if needed */
+  text-align: center;
+}
+.paragraph h3 { /* Target h3 within .paragraph if that's the structure */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.4em; /* Example */
+}
+.paragraph ul {
+  list-style-position: inside;
+  padding-left: 0; /* Reset padding if list-style-position is inside */
+}
+.paragraph ul li {
+  margin-bottom: 5px; /* Example spacing */
+}
+.pc-screenshot {
+  max-width: 48%; /* Adjust as needed for your layout */
+  margin: 1%;
+  height: auto;
+  display: inline-block; /* For side-by-side images */
+  vertical-align: top; /* Align images if they have different heights */
+}
+.one-image {
+  max-width: 90%; /* Or a specific pixel width */
+  margin: 20px auto;
+  display: block;
+}
+.notice {
+  background-color: #f8f9fa; /* Lighter background */
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #007bff; /* Example border color */
+  border-radius: 4px;
+}
+.youtube, video {
+  display: block; /* Ensure block display for margin auto to work */
+  margin: 20px auto; /* Center the video/iframe */
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+iframe.youtube {
+  display: block;          /* Make it a block element to control margins and width */
+  width: 100%;             /* Make it responsive, take full width of its parent up to max-width */
+  max-width: auto;        /* Set a sensible max-width for videos. Adjust as needed. */
+                           /* Common video widths: 560px, 640px, 720px, 854px */
+  aspect-ratio: 16 / 9;    /* Modern CSS for maintaining 16:9 aspect ratio */
+  margin: 20px auto;       /* Adds space above/below and centers the block element */
+  border: none;            /* Ensures no border, even if frameborder="0" is missed */
+  border-radius: 8px;      /* Optional: rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Optional: subtle shadow */
+}
+
+@supports not (aspect-ratio: 16 / 9) {
+  iframe.youtube {
+    /* For these browsers, height might need to be set explicitly or via JS,
+       as the padding-bottom trick doesn't work directly on replaced elements like iframes.
+       However, width: 100% and max-width will still apply.
+       A common fixed height for 16:9 might be calculated based on max-width, e.g., 720px * (9/16) = 405px
+    */
+    height: 405px; /* Fallback height if max-width is 720px */
+  }
+}
+
+.youtube { /* Specific for iframes if needed */
+  height: 315px; /* Default 16:9 aspect ratio for 560px width */
+  /* Consider aspect ratio boxes for responsive iframes if fixed height isn't ideal */
+}
+
+.project-banner {
+  width: 100%;
+  margin-bottom: 30px; /* Space after the banner */
+  text-align: left; /* Center the image if it's not full width */
+}
+
+.project-banner-image {
+  max-width: 100%; /* Responsive */
+  height: auto;    /* Maintain aspect ratio */
+  max-height: 400px; /* Optional: Prevent image from being excessively tall */
+  object-fit: cover; /* Or 'contain' if you want to see the whole image */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Optional: nice shadow */
+}
