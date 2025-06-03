@@ -48,8 +48,8 @@
 <script setup lang="ts">
 // Using <script setup> makes this much more concise
 import { type PropType } from 'vue'; // 'type' import for PropType
-import type ProjectData from '@/data/ProjectData'; // Adjust path as needed
-import ProjectDetailHeader from '@/components/ProjectDetailHeader.vue'; // Import the new header
+import type ProjectData from '../../data/ProjectData'; // Adjust path as needed
+import ProjectDetailHeader from '../ProjectDetailHeader.vue'; // Import the new header
 
 // Define props using defineProps compiler macro
 const props = defineProps({
